@@ -50,6 +50,7 @@ ML Module MySQL Database
 
 ## 📂 Project Structure
 
+
 sentiment-tracker/
 ├── backend/
 │   ├── app.py
