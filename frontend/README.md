@@ -1,12 +1,79 @@
-# React + Vite
+# Frontend – Sentiment Tracker (Vite + React Web Application)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+This frontend is a web application built using **Vite + React** that allows users to:
 
-Currently, two official plugins are available:
+- Submit textual user feedback
+- View stored feedback from the backend
+- See sentiment labels (Positive, Negative, Neutral)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is a **React.js web application created using Vite**.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+- Vite
+- React.js
+- JavaScript (ES6)
+- HTML5
+- CSS3
+- Fetch API 
+
+---
+
+## Folder Structure
+
+frontend/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── FeedbackForm.jsx      # Feedback input form
+│   │   ├── FeedbackTable.jsx     # Displays feedback list
+│   │   └── SentimentBadge.jsx   # Color-coded sentiment labels
+│   ├── App.jsx                  # Main application component
+│   └── main.jsx                 # Application entry point
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
+
+---
+
+## Components
+
+### FeedbackForm
+- Accepts user feedback input
+- Sends POST request to Flask backend
+
+### FeedbackTable
+- Fetches and displays feedback from the backend
+- Shows sentiment label for each message
+
+### SentimentBadge
+- Displays sentiment with color coding:
+  - Green → Positive
+  - Red → Negative
+  - Gray → Neutral
+
+---
+
+## API Communication
+The frontend communicates with the Flask backend using HTTP requests.
+
+Example using Fetch API:
+
+fetch("http://localhost:5000/feedback")
+
+---
+
+## Application URL
+The frontend runs on:
+
+http://localhost:4000
+
+---
+
+## Notes
+- Only Create and Read operations are available through the UI
+- Update and Delete operations are performed using Postman
+- Minimal validation is implemented (basic text length check)
