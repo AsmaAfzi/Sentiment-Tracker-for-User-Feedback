@@ -1,0 +1,155 @@
+/* Base styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #FFEAEA;
+  margin: 0;
+  padding: 2rem 1rem;
+  min-height: 100vh;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Main layout */
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+/* Form container */
+.container form {
+  margin-top: 2rem;
+  background-color: #9ECAD6;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 6px 20px rgba(255, 46, 46, 0.1);
+  color: white;
+}
+
+/* Reset form children styling */
+.container form * {
+  box-sizing: border-box;
+}
+
+/* Form heading and text */
+.container form h1 {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.container form p {
+  margin-bottom: 1rem;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+/* Textarea */
+.container form textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  font-size: 1rem;
+  resize: vertical;
+  border-radius: 8px;
+  border: 1px solid #748DAE;
+  background-color: aliceblue;
+  color: #333;
+}
+
+/* Submit button */
+.container form button {
+  margin-top: 0.5rem;
+  padding: 0.6em 1.5em;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background-color: #748DAE;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.container form button:hover {
+  background-color: #f77070;
+}
+
+/* Feedback section */
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 700px;
+  margin: 2rem auto 1rem auto;
+  padding: 0; 
+  box-sizing: border-box;
+}
+
+.row h3 {
+  margin: 0;
+  padding-left: 1rem;
+  font-size: 1.2rem;
+}
+
+.row button {
+  margin: 0;
+  padding: 0.5rem 1rem;
+  background-color: #748DAE;
+  border: 2px solid #748DAE;
+  color: #ffffff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-right: 1rem;
+}
+
+
+.row button:hover {
+  background-color: #f77070;
+  border: 2px solid #f77070;
+  color: white;
+}
+
+
+/* Feedback list */
+.table {
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .container form {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .container form textarea {
+    font-size: 0.9rem;
+  }
+
+  .container form button {
+    width: 100%;
+  }
+}
