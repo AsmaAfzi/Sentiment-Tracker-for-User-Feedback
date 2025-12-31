@@ -51,20 +51,21 @@ ML Module MySQL Database
 ## 📂 Project Structure
 
 sentiment-tracker/
-|-- backend/
-|   |-- app.py
-|   |-- db.py
-|   |-- sentiment.py
-|   |-- requirements.txt
-|   `-- README.md
-|
-|-- frontend/
-|   |-- src/
-|   |-- public/
-|   |-- package.json
-|   `-- README.md
-|
-`-- README.md
+├── backend/
+│   ├── app.py
+│   ├── db.py
+│   ├── sentiment.py
+│   ├── requirements.txt
+│   └── README.md
+│
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   ├── package.json
+│   └── README.md
+│
+└── README.md
+
 
 ---
 
